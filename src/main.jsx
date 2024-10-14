@@ -5,11 +5,28 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 import './index.css'
+import Excurd from './curd/curd';
+//import Excurd from './curd/curd';
+
+
+
+
+
+//import { FakestoreIndex } from './fakestore1/fakestoreindex';
+//import { Exdrawer } from './component/appbar';
+
+
+//import { CarouselSlider } from './carousel/carousel';
+
+
 //import { FakestoreIndex } from './fakestore1/fakestoreindex'
 //import AnchorTemporaryDrawer from './component/navbar';
-//import { Sidemenu } from './sidebar/sidemenu';
+
+
 //import AnchorTemporaryDrawer from './component/navbar';
-import { Exdrawer } from './component/appbar';
+//import { Exdrawer } from './component/appbar';
+
+
 //import { Navbar } from './navbar/navbar'
 //import { Indexpage } from './navbar/indexpage'
 //import IndexApp from './Appbar/Appindex'
@@ -23,7 +40,7 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
    
    
-  <Exdrawer/>
+  <Excurd/>
   </StrictMode>
 
 
