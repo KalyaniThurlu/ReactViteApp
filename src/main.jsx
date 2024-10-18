@@ -5,7 +5,23 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 import './index.css'
-import Excurd from './curd/curd';
+import { Portfolio } from './portpoliowebsite/portfolio';
+
+
+//import { Randam } from './random_Quote_generator/quote';
+//import { Random } from './random_Quote_generator/quote';
+//import QuoteGenerator from './random_Quote_generator/quote_Generator';
+//import { CarouselSlider } from './carousel/carousel';
+
+
+
+
+//import { GreetingAndClock } from './watch/wacth';
+//import { Stopwatch } from './watch/wacth';
+//import { Exdrawer } from './component/appbar';
+//import {  GreetingAndClock } from './watch/wacth';
+//import { Exdrawer } from './component/appbar';
+//import Excurd from './curd/curd';
 //import Excurd from './curd/curd';
 
 
@@ -40,7 +56,7 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
    
    
-  <Excurd/>
+  <Portfolio/>
   </StrictMode>
 
 

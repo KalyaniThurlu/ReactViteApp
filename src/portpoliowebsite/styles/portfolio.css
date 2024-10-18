@@ -1,0 +1,24 @@
+
+.contact-form {
+    background-color: white; 
+    border: 1px burlywood;
+    border-radius: 8px; 
+    max-width: 300px; 
+    margin: 0 auto; 
+    padding: 20px; 
+  }
+  
+  .contact-form .form-label {
+    font-weight: bold; 
+    
+  }
+  
+
+  .contact-form .btn {
+    width: 50%; 
+    background-color: gray;
+    border: none; 
+  }
+  
+ 
+  

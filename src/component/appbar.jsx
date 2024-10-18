@@ -1,6 +1,6 @@
 
-
 import * as React from 'react';
+import { Link, BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import Button from '@mui/material/Button';
@@ -15,18 +15,20 @@ import DashboardIcon from '@mui/icons-material/Dashboard';
 import PeopleIcon from '@mui/icons-material/People';
 import GroupIcon from '@mui/icons-material/Group';
 import FolderIcon from '@mui/icons-material/Folder';
+import { Followers } from './followers';  
+import { Following } from './following';  
+import { Repositories } from './repositories';
 
-export  function Exdrawer() {
+
+
+
+export function Exdrawer() {
   const [dropdown, setDropdown] = React.useState({
     left: false,
-    
   });
 
   const toggleDrawer = (anchor, open) => (event) => {
-    if (
-      event.type === 'keydown' &&
-      (event.key === 'Tab' || event.key === 'Shift')
-    ) {
+    if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
       return;
     }
     setDropdown({ ...dropdown, [anchor]: open });
@@ -39,36 +41,29 @@ export  function Exdrawer() {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-    
-    
-
       <List>
         {[
-          { text: 'Dashboard', icon: <DashboardIcon /> },
-          { text: 'Followers', icon: <PeopleIcon /> },
-          { text: 'Following', icon: <GroupIcon /> },
-          { text: 'Repositories', icon: <FolderIcon /> },
+          { text: 'Dashboard', icon: <DashboardIcon />, route: '/dashboard' },
+          { text: 'Followers', icon: <PeopleIcon />, route: '/followers' },
+          { text: 'Following', icon: <GroupIcon />, route: '/following' },
+          { text: 'Repositories', icon: <FolderIcon />, route: '/repositories' },
         ].map((item) => (
-          <ListItem key={item.text} disablePadding className='bg-warnig'>
-            <ListItemButton className=''>
-              <ListItemIcon className=''>{item.icon}</ListItemIcon>
-              <ListItemText secondary={item.text}  />
+          <ListItem key={item.text} disablePadding>
+            <ListItemButton component={Link} to={item.route}> 
+              <ListItemIcon>{item.icon}</ListItemIcon>
+              <ListItemText primary={item.text} />
             </ListItemButton>
           </ListItem>
         ))}
       </List>
       <Divider />
-
     </Box>
   );
 
   return (
-    <div className='bg-dark p-2 m-'>
-     
-     
-      
-      <React.Fragment>
-
+    
+    <Router>
+      <div className="bg-dark p-2">
         <Button onClick={toggleDrawer('left', true)}>
           <MenuIcon />
         </Button>
@@ -79,7 +74,20 @@ export  function Exdrawer() {
         >
           {list('left')}
         </Drawer>
-      </React.Fragment>
-    </div>
+        
+       
+       
+        <Routes>
+         
+         
+          
+          <Route path="/followers" element={<Followers />} /> 
+          <Route path="/following" element={<Following />} /> 
+          <Route path="/repositories" element={<Repositories />} /> 
+        </Routes>
+      </div>
+    </Router>
+
+  
   );
 }
