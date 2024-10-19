@@ -5,7 +5,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 import './index.css'
-import { Portfolio } from './portpoliowebsite/portfolio';
+import { Exhome } from './appbar/home';
+
+
+
+
+
+
+
+
 
 
 //import { Randam } from './random_Quote_generator/quote';
@@ -56,7 +64,7 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
    
    
-  <Portfolio/>
+  <Exhome/>
   </StrictMode>
 
 
