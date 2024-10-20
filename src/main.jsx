@@ -5,16 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 import './index.css'
-import { Exhome } from './appbar/home';
-
-
-
-
-
-
-
-
-
+import FlashcardsQuiz from './flashcard';
 
 //import { Randam } from './random_Quote_generator/quote';
 //import { Random } from './random_Quote_generator/quote';
@@ -37,7 +28,8 @@ import { Exhome } from './appbar/home';
 
 
 //import { FakestoreIndex } from './fakestore1/fakestoreindex';
-//import { Exdrawer } from './component/appbar';
+
+
 
 
 //import { CarouselSlider } from './carousel/carousel';
@@ -64,7 +56,7 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
    
    
-  <Exhome/>
+  <FlashcardsQuiz/>
   </StrictMode>
 
 

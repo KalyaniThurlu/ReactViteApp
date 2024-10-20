@@ -19,9 +19,6 @@ import { Followers } from './followers';
 import { Following } from './following';  
 import { Repositories } from './repositories';
 
-
-
-
 export function Exdrawer() {
   const [dropdown, setDropdown] = React.useState({
     left: false,
@@ -49,7 +46,7 @@ export function Exdrawer() {
           { text: 'Repositories', icon: <FolderIcon />, route: '/repositories' },
         ].map((item) => (
           <ListItem key={item.text} disablePadding>
-            <ListItemButton component={Link} to={item.route}> 
+            <ListItemButton component={Link} to={item.route}>
               <ListItemIcon>{item.icon}</ListItemIcon>
               <ListItemText primary={item.text} />
             </ListItemButton>
@@ -61,7 +58,6 @@ export function Exdrawer() {
   );
 
   return (
-    
     <Router>
       <div className="bg-dark p-2">
         <Button onClick={toggleDrawer('left', true)}>
@@ -74,20 +70,14 @@ export function Exdrawer() {
         >
           {list('left')}
         </Drawer>
-        
-       
-       
+
         <Routes>
-         
-         
-          
-          <Route path="/followers" element={<Followers />} /> 
-          <Route path="/following" element={<Following />} /> 
-          <Route path="/repositories" element={<Repositories />} /> 
+          <Route path="/dashboard" element={<div>Dashboard</div>} /> {/* Add Dashboard route */}
+          <Route path="/followers" element={<Followers />} />
+          <Route path="/following" element={<Following />} />
+          <Route path="/repositories" element={<Repositories />} />
         </Routes>
       </div>
     </Router>
-
-  
   );
 }
