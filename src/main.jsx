@@ -5,7 +5,19 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 import './index.css'
-import FlashcardsQuiz from './flashcard';
+
+
+import { Eximage } from './image/image';
+
+
+
+
+
+
+
+
+
+
 
 //import { Randam } from './random_Quote_generator/quote';
 //import { Random } from './random_Quote_generator/quote';
@@ -56,7 +68,7 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
    
    
-  <FlashcardsQuiz/>
+  <Eximage/>
   </StrictMode>
 
 
