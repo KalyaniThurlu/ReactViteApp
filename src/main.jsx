@@ -5,7 +5,19 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 import './index.css'
-import { Employee } from './validation/EmployeeRegistration';
+import { Exrandom } from './Random-cat-images/randomimages';
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -20,7 +32,7 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
    
    
-  <Employee/>
+  <Exrandom/>
   </StrictMode>
 
 
