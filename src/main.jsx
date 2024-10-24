@@ -5,34 +5,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 import './index.css'
-import { Exrandom } from './Random-cat-images/randomimages';
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+import { Home1 } from './router/home';
 
 createRoot(document.getElementById('root')).render(
- 
+  
  
   <StrictMode>
-   
-   
-  <Exrandom/>
+  <Home1/>
   </StrictMode>
 
 

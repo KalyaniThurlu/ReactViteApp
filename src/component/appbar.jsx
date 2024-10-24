@@ -18,6 +18,7 @@ import FolderIcon from '@mui/icons-material/Folder';
 import { Followers } from './followers';  
 import { Following } from './following';  
 import { Repositories } from './repositories';
+import { Dashboard } from './dashboard';
 
 export function Exdrawer() {
   const [dropdown, setDropdown] = React.useState({
@@ -72,7 +73,7 @@ export function Exdrawer() {
         </Drawer>
 
         <Routes>
-          <Route path="/dashboard" element={<div>Dashboard</div>} /> {/* Add Dashboard route */}
+          <Route path="/dashboard" element={<Dashboard/>} /> {/* Add Dashboard route */}
           <Route path="/followers" element={<Followers />} />
           <Route path="/following" element={<Following />} />
           <Route path="/repositories" element={<Repositories />} />
