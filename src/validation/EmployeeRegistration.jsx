@@ -145,7 +145,7 @@ export function Employee() {
             >
               <option value="">technology</option>
               <option value="HR">Java</option>
-              <option value="Engineering">phython</option>
+              <option value="Engineering">java</option>
               <option value="Sales">Front End</option>
 
             </select>
