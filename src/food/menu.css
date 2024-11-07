@@ -1,0 +1,31 @@
+
+/* For the modal - grid display for multiple images */
+.modal-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    display: grid;   /* Set to grid */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));  /* Multiple columns */
+    gap: 10px;  /* Space between grid items */
+    justify-items: center;  /* Center items horizontally */
+    align-items: center;    /* Center items vertically */
+}
+
+/* For individual images inside modal */
+.modal-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;  /* Ensure images are displayed as blocks */
+}
+
+/* For the main menu grid layout */
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));  /* Automatically adjust columns */
+    gap: 20px;  /* Space between items */
+}

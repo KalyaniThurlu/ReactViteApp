@@ -6,7 +6,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 import './index.css';
-import { Cal1 } from './calculator/calculator1';
+
+
+import { Form1 } from './validation/form';
+//import { Exstudent } from './validation/studentform';
+//import { Homes } from './food/home';
+//import { Exhome } from './appbar/home';
+//import { Cal1 } from './calculator/calculator1';
 //import { Calculator } from './calculator/calculator';
 //import { Practice } from './usecontext/home1';
 //import { ThemeProvider } from './usecontext/themecontext';
@@ -18,7 +24,7 @@ createRoot(document.getElementById('root')).render(
 
   <StrictMode>
     
-    <Cal1/>
+    <Form1/>
   </StrictMode>
 
 );
