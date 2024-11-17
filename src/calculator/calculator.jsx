@@ -27,6 +27,8 @@ export function Calculator() {
 
     return (
         <form action="">
+         
+         
             <div>
                 <input type="text" value={currentInput} readOnly />
             </div>
