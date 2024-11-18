@@ -6,6 +6,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { Menu } from './barchart/navbar';
 
+
+
+
+
+
 //import { Home1 } from './router/home';
 
 //import { ThemeProvider } from './usecontext/themecontext';

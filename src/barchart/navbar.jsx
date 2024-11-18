@@ -9,6 +9,7 @@ import { Cal1 } from "../calculator/calculator1";
 import { Portfolio } from "../portpoliowebsite/portfolio";
 import { Form1 } from "../validation/form";
 import { Eximage } from "../image/image";
+import Excurd from "../curd/curd";
 export function Menu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -48,6 +49,7 @@ export function Menu() {
           <span><Link to="/validation/form"  onClick={toggleMenu}>Form Validation</Link></span>
     
           <span><Link to="/image/image" onClick={toggleMenu}>Image</Link></span>
+          <span><Link to="/curd/curd" onClick={toggleMenu}>Crud</Link></span>
         </nav>
 
      
@@ -60,6 +62,7 @@ export function Menu() {
             <Route path="/portpoliowebsite/portfolio" element={<Portfolio/>}/>
             <Route path="/validation/form" element={<Form1/>}/>
             <Route path="/image/image" element={<Eximage/>} />
+          <Route path="/curd/curd" element={<Excurd/>} />
           </Routes>
         </main>
       </div>

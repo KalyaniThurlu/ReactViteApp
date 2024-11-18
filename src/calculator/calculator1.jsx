@@ -22,6 +22,7 @@ export function Cal1() {
 
     return (
         <form action="">
+            <h1>Calculator</h1>
             <div>
                 <input type="text" value={currentInput} readOnly />
             </div>

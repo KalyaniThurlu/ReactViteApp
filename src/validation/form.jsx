@@ -67,6 +67,7 @@ export function Form1() {
   return (
     <form onSubmit={handleSubmit}>
       <dl>
+      <h2>Form Validation</h2>
         <dt>Name:</dt>
         <dd>
           <input
