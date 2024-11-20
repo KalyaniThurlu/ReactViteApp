@@ -4,7 +4,14 @@ import { createRoot } from 'react-dom/client';
 
 import 'bootstrap/dist/css/bootstrap.min.css';  
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import { Menu } from './barchart/navbar';
+import { Student } from './Table/student';
+
+
+
+
+
+
+
 
 
 
@@ -20,7 +27,7 @@ createRoot(document.getElementById('root')).render(
 
   <StrictMode>
     
-    <Menu/>
+    < Student/>
   </StrictMode>
 
 );

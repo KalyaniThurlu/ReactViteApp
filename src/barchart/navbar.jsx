@@ -10,6 +10,9 @@ import { Portfolio } from "../portpoliowebsite/portfolio";
 import { Form1 } from "../validation/form";
 import { Eximage } from "../image/image";
 import Excurd from "../curd/curd";
+import { Carousel } from "../carosuel/carousel";
+import { Exradom } from "../Random_password/Random_Password";
+import { StudentTable } from "../Table/table";
 export function Menu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -50,6 +53,9 @@ export function Menu() {
     
           <span><Link to="/image/image" onClick={toggleMenu}>Image</Link></span>
           <span><Link to="/curd/curd" onClick={toggleMenu}>Crud</Link></span>
+          <span><Link to="/carosuel/carousel">Carousel</Link></span>
+          <span><Link to="/Random_password/Random_Password">RandomPassword</Link></span>
+          <span><Link to="/memory-game/table">Table</Link></span>
         </nav>
 
      
@@ -63,6 +69,10 @@ export function Menu() {
             <Route path="/validation/form" element={<Form1/>}/>
             <Route path="/image/image" element={<Eximage/>} />
           <Route path="/curd/curd" element={<Excurd/>} />
+          <Route path="/carosuel/carousel"  element = {<Carousel/>}/>
+          <Route path="/Random_password/Random_Password" element={<Exradom/>}/>
+          <Route path="/memory-game/table" element={<StudentTable/>}/>
+          
           </Routes>
         </main>
       </div>
