@@ -13,6 +13,8 @@ import Excurd from "../curd/curd";
 import { Carousel } from "../carosuel/carousel";
 import { Exradom } from "../Random_password/Random_Password";
 import { StudentTable } from "../Table/table";
+import { Curd } from "../Table/to-do-list.jsx";
+
 export function Menu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -55,7 +57,8 @@ export function Menu() {
           <span><Link to="/curd/curd" onClick={toggleMenu}>Crud</Link></span>
           <span><Link to="/carosuel/carousel">Carousel</Link></span>
           <span><Link to="/Random_password/Random_Password">RandomPassword</Link></span>
-          <span><Link to="/memory-game/table">Table</Link></span>
+          <span><Link to="/Table/table">Table</Link></span>
+          <span><Link to="/Table/student">Curd</Link></span>
         </nav>
 
      
@@ -71,7 +74,8 @@ export function Menu() {
           <Route path="/curd/curd" element={<Excurd/>} />
           <Route path="/carosuel/carousel"  element = {<Carousel/>}/>
           <Route path="/Random_password/Random_Password" element={<Exradom/>}/>
-          <Route path="/memory-game/table" element={<StudentTable/>}/>
+          <Route path="/Table/table" element={<StudentTable/>}/>
+          <Route path="/Table/student" element={<Curd/>}/>
           
           </Routes>
         </main>

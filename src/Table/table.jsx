@@ -25,7 +25,7 @@ export function StudentTable() {
 
   return (
     <div style={{ textAlign: 'center', marginTop: '20px' }}>
-      <h2>Editable Student Table</h2>
+      <h2 style={{marginLeft:"10px"}}>Editable Student Table</h2>
       <table border="1" style={{ margin: '0 auto', borderCollapse: 'collapse' }}>
         <thead>
           <tr>
@@ -61,14 +61,15 @@ export function StudentTable() {
               </td>
               <td>
                 <button onClick={() => handleDelete(index)}>Delete</button>
+                <button onClick={handleAddStudent} style={{ marginTop: '10px' }}>
+        Add 
+      </button>
               </td>
             </tr>
           ))}
         </tbody>
       </table>
-      <button onClick={handleAddStudent} style={{ marginTop: '10px' }}>
-        Add Student
-      </button>
+
     </div>
   );
 }

@@ -4,9 +4,7 @@ import { createRoot } from 'react-dom/client';
 
 import 'bootstrap/dist/css/bootstrap.min.css';  
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import { Student } from './Table/student';
-
-
+import { TodoList } from './Table/to-do-list';
 
 
 
@@ -27,7 +25,7 @@ createRoot(document.getElementById('root')).render(
 
   <StrictMode>
     
-    < Student/>
+    <TodoList/>
   </StrictMode>
 
 );

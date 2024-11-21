@@ -1,8 +1,9 @@
 
 
 
-  header {
-    background-color: #f8f9fa;
+
+header {
+    background-color:lightgreen;
     padding: 10px 20px;
     width: 100%;
     position: fixed;
@@ -18,10 +19,11 @@
     
   }
   
-  /* Hamburger icon */
+
+  
   .hamburger {
     cursor: pointer;
-    font-size: 30px;
+    font-size: 50px;
     color:white;
   }
   
@@ -29,17 +31,17 @@
   .sidebar {
     position: fixed;
     top: 0;
-    left: -250px; /* Hide sidebar off-screen */
+    left: -250px; 
     width: 250px;
     height: 100%;
-    background-color:lightblue;
+    background-color:lightgreen;
     color: white;
  
   
   }
   
   .sidebar.open {
-    left: 0; /* Slide in from left */
+    left: 0; 
   }
   
   .sidebar span {
@@ -56,7 +58,8 @@
   }
 
   
-  /* Main Content */
+ 
+  
   main {
     margin-top: 50px;
     margin-left: 0;
@@ -64,7 +67,8 @@
   }
   
   .sidebar.open ~ main {
-    margin-left: 250px; 
+    margin-left: 300px; 
+    margin-top: 5%;
   }
 
 
