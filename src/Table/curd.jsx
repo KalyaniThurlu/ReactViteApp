@@ -4,6 +4,9 @@ import { BrowserRouter, Link, Routes, Route } from "react-router-dom";
 import {  TodoList } from "./to-do-list.jsx";
 import "./curd.css"
 import { VowelConsonantChecker } from "./vowel.jsx";
+import { TemperatureConvert } from "./TemperatureConvert.jsx";
+import { SimpleAuthentication } from "./Authenticated.jsx";
+
 
 
 
@@ -30,6 +33,8 @@ export function Curd1() {
                   
                   <span><Link to="/to-do-list">Todo_List</Link></span>
                   <span><Link to="/vowel">vowel</Link></span>
+                  <span><Link to="/TemperatureConvert">Temperature</Link></span>
+                  <span><Link to="/Authenticated">Authetication</Link></span>
                 </nav>
 
             
@@ -38,6 +43,8 @@ export function Curd1() {
                     <Routes>
                         <Route path="/to-do-list" element={< TodoList/>} />
                         <Route path="/vowel" element={<VowelConsonantChecker/>}/>
+                        <Route path="/TemperatureConvert"  element={<TemperatureConvert/>}/>
+                        <Route path="/Authenticated"  element={<SimpleAuthentication/>} />
                     </Routes>
                 </main>
             </div>
