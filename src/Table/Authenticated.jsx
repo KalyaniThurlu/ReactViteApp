@@ -14,7 +14,7 @@ export function SimpleAuthentication() {
             setIsAuthenticated(true);
             setError(""); 
         } else {
-            setError("Invalid username or password");
+            setError("Invalid username and password");
         }
     }
 
@@ -27,7 +27,7 @@ export function SimpleAuthentication() {
 
     return (
         <div style={{marginTop:"30px",marginLeft:"30px"}}>
-            <h1>SimpleAuthentication</h1>
+            <h1>Authentication</h1>
             {!isAuthenticated ? (
                 <form onSubmit={handleSubmit}>
                     <div>

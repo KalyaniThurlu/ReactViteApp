@@ -6,6 +6,8 @@ import "./curd.css"
 import { VowelConsonantChecker } from "./vowel.jsx";
 import { TemperatureConvert } from "./TemperatureConvert.jsx";
 import { SimpleAuthentication } from "./Authenticated.jsx";
+import { Localchart } from "./localchat.jsx";
+import { ExAge } from "./Age_calculator.jsx";
 
 
 
@@ -35,6 +37,8 @@ export function Curd1() {
                   <span><Link to="/vowel">vowel</Link></span>
                   <span><Link to="/TemperatureConvert">Temperature</Link></span>
                   <span><Link to="/Authenticated">Authetication</Link></span>
+                  <span><Link to="/localchat">Local CahrtApp</Link></span>
+                  <span><Link to="/Age_calender">Age_calculator</Link></span>
                 </nav>
 
             
@@ -45,7 +49,10 @@ export function Curd1() {
                         <Route path="/vowel" element={<VowelConsonantChecker/>}/>
                         <Route path="/TemperatureConvert"  element={<TemperatureConvert/>}/>
                         <Route path="/Authenticated"  element={<SimpleAuthentication/>} />
+                        <Route  path="/localchat"  element={<Localchart/>}/>
+                        <Route path="/Age_calender"  element={<ExAge/>} />
                     </Routes>
+
                 </main>
             </div>
         </BrowserRouter>
