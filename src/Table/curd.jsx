@@ -8,6 +8,8 @@ import { TemperatureConvert } from "./TemperatureConvert.jsx";
 import { SimpleAuthentication } from "./Authenticated.jsx";
 import { Localchart } from "./localchat.jsx";
 import { ExAge } from "./Age_calculator.jsx";
+import FlashcardsApp from "./flashcardApp.jsx";
+import { ExpenseTracker } from "./expense_traker.jsx";
 
 
 
@@ -39,7 +41,10 @@ export function Curd1() {
                   <span><Link to="/Authenticated">Authetication</Link></span>
                   <span><Link to="/localchat">Local CahrtApp</Link></span>
                   <span><Link to="/Age_calender">Age_calculator</Link></span>
+                  <span><Link to="/flashcardApp">FlashcardApp</Link></span>
+                  <span><Link to="/expense_traker">Expense-Traker</Link></span>
                 </nav>
+
 
             
             
@@ -51,6 +56,8 @@ export function Curd1() {
                         <Route path="/Authenticated"  element={<SimpleAuthentication/>} />
                         <Route  path="/localchat"  element={<Localchart/>}/>
                         <Route path="/Age_calender"  element={<ExAge/>} />
+                        <Route path="/flashcardApp" element={<FlashcardsApp/>} />
+                        <Route path="/expense_traker" element={<ExpenseTracker/>} />
                     </Routes>
 
                 </main>
