@@ -10,6 +10,7 @@ import { Localchart } from "./localchat.jsx";
 import { ExAge } from "./Age_calculator.jsx";
 import FlashcardsApp from "./flashcardApp.jsx";
 import { ExpenseTracker } from "./expense_traker.jsx";
+import { RandomColorGenerator } from "./Random_color_Genator.jsx";
 
 
 
@@ -43,6 +44,7 @@ export function Curd1() {
                   <span><Link to="/Age_calender">Age_calculator</Link></span>
                   <span><Link to="/flashcardApp">FlashcardApp</Link></span>
                   <span><Link to="/expense_traker">Expense-Traker</Link></span>
+                  <span><Link to="/Random_color_Genator">Random_Genarator</Link></span>
                 </nav>
 
 
@@ -58,6 +60,7 @@ export function Curd1() {
                         <Route path="/Age_calender"  element={<ExAge/>} />
                         <Route path="/flashcardApp" element={<FlashcardsApp/>} />
                         <Route path="/expense_traker" element={<ExpenseTracker/>} />
+                        <Route path="/Random_color_Genator" element={<RandomColorGenerator/>} />
                     </Routes>
 
                 </main>

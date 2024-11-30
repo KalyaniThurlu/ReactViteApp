@@ -57,7 +57,7 @@ export function ExpenseTracker() {
       <ul>
         {expenses.map((expense, index) => (
           <li key={index}>
-            {expense.name}: ${expense.amount}
+            {expense.name}: {expense.amount}
           </li>
         ))}
       </ul>
