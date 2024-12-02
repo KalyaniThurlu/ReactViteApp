@@ -11,6 +11,7 @@ import { ExAge } from "./Age_calculator.jsx";
 import FlashcardsApp from "./flashcardApp.jsx";
 import { ExpenseTracker } from "./expense_traker.jsx";
 import { RandomColorGenerator } from "./Random_color_Genator.jsx";
+import { PomodoroTimer } from "./poldrom.jsx";
 
 
 
@@ -45,6 +46,7 @@ export function Curd1() {
                   <span><Link to="/flashcardApp">FlashcardApp</Link></span>
                   <span><Link to="/expense_traker">Expense-Traker</Link></span>
                   <span><Link to="/Random_color_Genator">Random_Genarator</Link></span>
+                  <span><Link to="/poldrom">promodomer</Link></span>
                 </nav>
 
 
@@ -61,6 +63,7 @@ export function Curd1() {
                         <Route path="/flashcardApp" element={<FlashcardsApp/>} />
                         <Route path="/expense_traker" element={<ExpenseTracker/>} />
                         <Route path="/Random_color_Genator" element={<RandomColorGenerator/>} />
+                        <Route path="/poldrom" element={<PomodoroTimer/>}/>
                     </Routes>
 
                 </main>
