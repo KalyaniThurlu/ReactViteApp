@@ -4,7 +4,12 @@ import { createRoot } from 'react-dom/client';
 
 import 'bootstrap/dist/css/bootstrap.min.css';  
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import { Expormodoro } from './Table/ex';
+import { Curd1 } from './Table/curd';
+
+
+
+
+
 
 
 
@@ -18,7 +23,7 @@ createRoot(document.getElementById('root')).render(
 
   <StrictMode>
     
-   <Expormodoro/>
+    <Curd1/>
   </StrictMode>
 
 );
