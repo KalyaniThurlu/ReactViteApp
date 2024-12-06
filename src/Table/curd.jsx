@@ -14,6 +14,7 @@ import { RandomColorGenerator } from "./Random_color_Genator.jsx";
 import { PomodoroTimer } from "./pomodoro-timer.jsx";
 import { SocialMediaPost } from "./social-media-post.jsx";
 import { Employeedirectory } from "./employee_directory.jsx";
+import { WhackAMole } from "./wack-a-mole-game.jsx";
 
 
 
@@ -53,6 +54,7 @@ export function Curd1() {
                   <span><Link to="/pomodoro-timer">Pomodoro-Timer</Link></span>
                   <span><Link to="/social-media-post">Social media post</Link></span>
                   <span><Link to="/ex">employee_directory</Link></span>
+                  <span><Link to="/wack-a-mole-game">Wack-a-Mole-game</Link></span>
                 </nav>
 
 
@@ -72,6 +74,7 @@ export function Curd1() {
                         <Route path="/pomodoro-timer" element={<PomodoroTimer/>}/>
                         <Route  path="/social-media-post" element={<SocialMediaPost/>} />
                         <Route  path="/ex" element={<Employeedirectory/>} />
+                        <Route path="/wack-a-mole-game" element={<WhackAMole/>} />
                     </Routes>
 
                 </main>

@@ -13,7 +13,6 @@ import { Curd1 } from './Table/curd';
 
 
 
-
 //import { Home1 } from './router/home';
 
 //import { ThemeProvider } from './usecontext/themecontext';
