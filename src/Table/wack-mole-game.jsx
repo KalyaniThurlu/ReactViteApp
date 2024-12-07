@@ -22,7 +22,7 @@ import  { useState, useEffect } from 'react';
 
   return (
     <div style={{ textAlign: 'center' }}>
-      <h1>Whack-a-Mole Game</h1>
+      <h1>Whack-Mole Game</h1>
       <p>Your Score: {score}</p>
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 100px)', gap: '10px', justifyContent:"center",alignItems:"center" }}>
         {Array.from({ length: 9 }).map((_, index) => (
