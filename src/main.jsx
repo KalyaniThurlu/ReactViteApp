@@ -4,7 +4,8 @@ import { createRoot } from 'react-dom/client';
 
 import 'bootstrap/dist/css/bootstrap.min.css';  
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import { Curd1 } from './Table/curd';
+import { Sidebar } from './Router/sidebar';
+
 
 
 
@@ -20,7 +21,7 @@ createRoot(document.getElementById('root')).render(
 
   <StrictMode>
     
-    < Curd1 />
+    <Sidebar/>
   </StrictMode>
 
 );
