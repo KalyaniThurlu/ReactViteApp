@@ -4,9 +4,7 @@ import { createRoot } from 'react-dom/client';
 
 import 'bootstrap/dist/css/bootstrap.min.css';  
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import { Sidebar } from './Router/sidebar';
-
-
+import { Navbar } from './Router/navbar';
 
 
 
@@ -20,8 +18,7 @@ import { Sidebar } from './Router/sidebar';
 createRoot(document.getElementById('root')).render(
 
   <StrictMode>
-    
-    <Sidebar/>
+    <Navbar/>
   </StrictMode>
 
 );
