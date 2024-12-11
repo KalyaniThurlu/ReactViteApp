@@ -1,4 +1,26 @@
 
+import { useState } from "react";
+
+export function MemoryGame() {
+  const items = [
+    { id: 1, image: "https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_640.png" },
+    { id: 2, image: "https://cdn.worldvectorlogo.com/logos/css-3.svg" },
+    { id: 1, image: "https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_640.png" },
+    { id: 2, image: "https://cdn.worldvectorlogo.com/logos/css-3.svg" },
+    { id: 3, image: "https://w7.pngwing.com/pngs/452/24/png-transparent-js-logo-node-logos-and-brands-icon.png" },
+    { id: 3, image: "https://w7.pngwing.com/pngs/452/24/png-transparent-js-logo-node-logos-and-brands-icon.png" },
+    {id:4, image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSoW3g9hjXIasgon-kpzz-lD9z4SsalyPbZA&s"},
+    {id:4, image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSoW3g9hjXIasgon-kpzz-lD9z4SsalyPbZA&s"},
+    {id:5, image:"https://d2jdgazzki9vjm.cloudfront.net/js/nodejs/images/node-js-tutorial.png"},
+    
+    
+
+    
+  ];
+
+  const [cards, setCards] = useState(shuffle(items));
+  const [flipped, setFlipped] = useState([]);
+  const [matched, setMatched] = useState([]);
 
   // Shuffle cards
   function shuffle(items) {

@@ -4,6 +4,7 @@ import { BrowserRouter, Link, Routes, Route } from "react-router-dom";
 import "./navbar.css";
 import { ShoppingCart } from "./shopping-cart";
 import { MemoryGame } from "./memory";
+import { TextFormatter } from "./text-formatter";
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,12 +31,14 @@ export function Navbar() {
 
           </span>
           <span><Link to="/memory" >Memory-Game</Link></span>
+          <span><Link to="/text-formatter">Text-Formatter</Link></span>
         </nav>
 
         <main>
           <Routes>
             <Route path="/shopping-cart" element={<ShoppingCart />} />
             <Route path="/memory" element={<MemoryGame/>} />
+            <Route path="/text-formatter" element={<TextFormatter/>}/>
           </Routes>
         </main>
       </div>
