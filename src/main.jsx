@@ -12,10 +12,6 @@ import { Navbar } from './Router/navbar';
 
 
 
-
-
-
-
 //import { Home1 } from './router/home';
 
 //import { ThemeProvider } from './usecontext/themecontext';
