@@ -7,11 +7,6 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import { Navbar } from './Router/navbar';
 
 
-
-
-
-
-
 //import { Home1 } from './router/home';
 
 //import { ThemeProvider } from './usecontext/themecontext';
