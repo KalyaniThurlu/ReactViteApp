@@ -4,7 +4,10 @@ import { createRoot } from 'react-dom/client';
 
 import 'bootstrap/dist/css/bootstrap.min.css';  
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import { TodoList } from './Router/todo-list';
+import { Navbar1 } from './Router/navbar';
+
+
+
 
 
 
@@ -16,7 +19,7 @@ import { TodoList } from './Router/todo-list';
 createRoot(document.getElementById('root')).render(
 
   <StrictMode>
-    <TodoList/>
+    <Navbar1/>
   </StrictMode>
 
 );

@@ -7,8 +7,10 @@ import { MemoryGame } from "./memory";
 import { TextFormatter } from "./text-formatter";
 import { Numbers } from "./guess-number";
 import { Diary } from "./diary";
+import {FlashcardApp} from "./flashcard"
 
-export function Navbar() {
+
+export function Navbar1() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleClick = () => {
@@ -33,9 +35,13 @@ export function Navbar() {
 
           </span>
           <span><Link to="/memory" >Memory-Game</Link></span>
+
           <span><Link to="/text-formatter">Text-Formatter</Link></span>
           <span><Link to="/guess-number">Guess-Number</Link></span>
           <span><Link to="/dairy">Local-storage</Link></span>
+          <span><Link to="/flashcard">flashcard</Link></span>
+        
+        
         </nav>
 
         <main>
@@ -45,6 +51,8 @@ export function Navbar() {
             <Route path="/text-formatter" element={<TextFormatter/>}/>
             <Route path="/guess-number" element={<Numbers/>} />
             <Route path="/dairy" element={<Diary/>} />
+        <Route path="/flashcard" element={<FlashcardApp/>} />
+        
           </Routes>
         </main>
       </div>
