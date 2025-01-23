@@ -7,7 +7,10 @@ import { MemoryGame } from "./memory";
 import { TextFormatter } from "./text-formatter";
 import { Numbers } from "./guess-number";
 import { Diary } from "./diary";
-import {FlashcardApp} from "./flashcard"
+import { FlashcardApp } from "./flashcard"
+import Counter from "./counter";
+
+
 
 
 export function Navbar1() {
@@ -40,19 +43,25 @@ export function Navbar1() {
           <span><Link to="/guess-number">Guess-Number</Link></span>
           <span><Link to="/dairy">Local-storage</Link></span>
           <span><Link to="/flashcard">flashcard</Link></span>
-        
-        
+          <span><Link to="/counter">Counter</Link></span>
+
+
+
+
         </nav>
 
         <main>
           <Routes>
             <Route path="/shopping-cart" element={<ShoppingCart />} />
-            <Route path="/memory" element={<MemoryGame/>} />
-            <Route path="/text-formatter" element={<TextFormatter/>}/>
-            <Route path="/guess-number" element={<Numbers/>} />
-            <Route path="/dairy" element={<Diary/>} />
-        <Route path="/flashcard" element={<FlashcardApp/>} />
-        
+            <Route path="/memory" element={<MemoryGame />} />
+            <Route path="/text-formatter" element={<TextFormatter />} />
+            <Route path="/guess-number" element={<Numbers />} />
+            <Route path="/dairy" element={<Diary />} />
+            <Route path="/flashcard" element={<FlashcardApp />} />
+            <Route path="/counter" element={<Counter />} />
+
+
+
           </Routes>
         </main>
       </div>

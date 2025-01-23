@@ -5,14 +5,19 @@
 
 
 import { Header } from "./portpoliowebsite/portfolio";
+import { CounterProvider } from "./Router/counter";
 
 function App() {
   return (
-    
-    <Header/>
-   
-  
-    
+    <CounterProvider>
+      <App />
+
+      <Header />
+    </CounterProvider>
+
+
+
+
   );
 }
 
