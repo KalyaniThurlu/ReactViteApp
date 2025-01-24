@@ -9,6 +9,7 @@ import { Numbers } from "./guess-number";
 import { Diary } from "./diary";
 import { FlashcardApp } from "./flashcard"
 import Counter from "./counter";
+import CrudApp from "./Curd";
 
 
 
@@ -44,10 +45,8 @@ export function Navbar1() {
           <span><Link to="/dairy">Local-storage</Link></span>
           <span><Link to="/flashcard">flashcard</Link></span>
           <span><Link to="/counter">Counter</Link></span>
-
-
-
-
+          <span><Link to="/Curd">Curd</Link></span>
+      
         </nav>
 
         <main>
@@ -59,9 +58,7 @@ export function Navbar1() {
             <Route path="/dairy" element={<Diary />} />
             <Route path="/flashcard" element={<FlashcardApp />} />
             <Route path="/counter" element={<Counter />} />
-
-
-
+            <Route path="/Curd" element={<CrudApp />} />
           </Routes>
         </main>
       </div>
