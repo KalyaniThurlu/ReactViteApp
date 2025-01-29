@@ -10,6 +10,10 @@ import { Diary } from "./diary";
 import { FlashcardApp } from "./flashcard"
 import Counter from "./counter";
 import CrudApp from "./Curd";
+import Count from "./state"
+import Exfun from "./props";
+import Exhooks from "./hooks";
+import ApiExample from "./Api";
 
 
 
@@ -46,7 +50,12 @@ export function Navbar1() {
           <span><Link to="/flashcard">flashcard</Link></span>
           <span><Link to="/counter">Counter</Link></span>
           <span><Link to="/Curd">Curd</Link></span>
-      
+          <span><Link to="/state">state</Link></span>
+          <span><Link to="/props">props</Link></span>
+          <span><Link to="/hooks">hooks</Link></span>
+          <span><Link to="/Api">Api</Link></span>
+          
+
         </nav>
 
         <main>
@@ -59,6 +68,11 @@ export function Navbar1() {
             <Route path="/flashcard" element={<FlashcardApp />} />
             <Route path="/counter" element={<Counter />} />
             <Route path="/Curd" element={<CrudApp />} />
+            <Route path="/state" element={<Count />} />
+            <Route path="/props" element={<Exfun />} />
+            <Route path="/hooks" element={<Exhooks />} />
+            <Route path="/Api" element={<ApiExample />} />
+        
           </Routes>
         </main>
       </div>
