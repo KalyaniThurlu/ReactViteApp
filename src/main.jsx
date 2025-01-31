@@ -2,15 +2,15 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 
-import 'bootstrap/dist/css/bootstrap.min.css';  
+import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import { Navbar1 } from './Router/navbar';
+import Login from './Router/ControlledCOmponents';
+//import NestedNumberList from './Router/numberlist';
+//import ApiExample from './Router/Api';
+//import Formvalidation from './Router/Formvalidation';
+//import FormValidationFormik from './Router/FormikFormValidation';
 
-
-
-
-
-
+//import { Navbar1 } from './Router/navbar';
 //import { Home1 } from './router/home';
 
 //import { ThemeProvider } from './usecontext/themecontext';
@@ -19,7 +19,7 @@ import { Navbar1 } from './Router/navbar';
 createRoot(document.getElementById('root')).render(
 
   <StrictMode>
-    <Navbar1/>
+    <Login />
   </StrictMode>
 
 );

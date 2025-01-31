@@ -1,5 +1,6 @@
 
 import { useState, useEffect } from "react";
+import axios from "axios";
 
 const ApiExample = () => {
     const [users, setUsers] = useState([]);
@@ -8,17 +9,10 @@ const ApiExample = () => {
 
     useEffect(() => {
         function fetchUsers() {
-            fetch("https://dummyjson.com/users?delay=1000")
-                .then((response) => {
+            { /* axios("https://dummyjson.com/users?delay=1000")
 
-                    if (!response.ok) {
-                        throw new error("failed to fecth data")
-                    }
-                    return response.json()
-                })
-
-                .then((data) => {
-                    setUsers(data.users)
+                .then((responce) => {
+                    setUsers(responce.data.users)
 
                 }).catch((error) => {
                     setError(error.message)
@@ -27,11 +21,26 @@ const ApiExample = () => {
 
                 .finally(() => {
                     setLoading(false)
+                })*/}
+
+            fetch("https://dummyjson.com/users?delay=1000")
+                .then((response) => {
+                    if (!response.ok) {
+                        throw new Error("Failed to fetch data");
+                    }
+                    return response.json(); // Parse JSON
+                })
+                .then((data) => {
+                    setUsers(data.users); // Access data.users correctly
                 })
 
+                .catch((error) => {
+                    setError(error.message)
 
+                }).finally(() => {
+                    setLoading(false)
+                })
         };
-
         fetchUsers();
     }, []);
 
@@ -47,7 +56,6 @@ const ApiExample = () => {
                     <li key={user.id} >
                         {user.firstName} {user.lastName}
 
-                        {/* Display user name */}
                     </li>
                 ))}
             </ol>

@@ -54,7 +54,7 @@ export function Navbar1() {
           <span><Link to="/props">props</Link></span>
           <span><Link to="/hooks">hooks</Link></span>
           <span><Link to="/Api">Api</Link></span>
-          
+
 
         </nav>
 
@@ -72,7 +72,7 @@ export function Navbar1() {
             <Route path="/props" element={<Exfun />} />
             <Route path="/hooks" element={<Exhooks />} />
             <Route path="/Api" element={<ApiExample />} />
-        
+
           </Routes>
         </main>
       </div>
