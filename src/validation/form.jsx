@@ -16,8 +16,8 @@ export function Form1() {
 
     let valid = true;
 
- 
-    
+
+
     if (name.length <= 5) {
       setErrorName("Name must be at least 6 characters.");
       valid = false;
@@ -28,7 +28,7 @@ export function Form1() {
       setErrorName("");
     }
 
-    
+
     if (pwd.length <= 6) {
       setErrorPwd("Password must be at least 6 characters.");
       valid = false;
@@ -36,8 +36,8 @@ export function Form1() {
       setErrorPwd("");
     }
 
-   
-    
+
+
     const numberPattern = /^\+91\d{10}$/;
     if (!number.match(numberPattern)) {
       setErrorNumber("Mobile number must start with +91 and be 10 digits.");
@@ -67,10 +67,10 @@ export function Form1() {
   return (
     <form onSubmit={handleSubmit}>
       <dl>
-      <h2>Form Validation</h2>
+        <h2>Form Validation</h2>
         <dt>Name:</dt>
         <dd>
-          <input
+          <input style={{ marginLeft: "6%" }}
             type="text"
             name="name"
             value={name}
@@ -81,7 +81,7 @@ export function Form1() {
 
         <dt>Password:</dt>
         <dd>
-          <input
+          <input style={{ marginLeft: "6%" }}
             type="password"
             name="pwd"
             value={pwd}
@@ -90,9 +90,9 @@ export function Form1() {
           {errorPwd && <p style={{ color: "red" }}>{errorPwd}</p>}
         </dd>
 
-        <dt>Mobile Number:</dt>
+        <dt >Mobile Number:</dt>
         <dd>
-          <input
+          <input style={{ marginLeft: "6%" }}
             type="text"
             name="number"
             value={number}

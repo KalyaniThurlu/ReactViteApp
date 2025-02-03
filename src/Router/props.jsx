@@ -1,16 +1,13 @@
 
-const Exprops = (props) => {
-    return <p>{props.name}</p>;
-};
-
-const Exfun = () => {
+const Exprops = () => {
+    return <Exfun name="john" />
+}
+const Exfun = ({ name }) => {
     return (
-        <div style={{ marginTop: "20px" }}>
-            <Exprops name="Priya" />
-            <Exprops name="Latha" />
-            <Exprops name="Madhu" />
+        <div>
+            <h2>hello {name}</h2>
         </div>
-    );
+    )
 };
+export default Exprops;
 
-export default Exfun;

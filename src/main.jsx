@@ -4,7 +4,10 @@ import { createRoot } from 'react-dom/client';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import Login from './Router/ControlledCOmponents';
+import ImageGallery from './Router/ExApi';
+
+//import UncontrolledComponents from './Router/UncontrolledComponents';
+//import Login from './Router/ControlledCOmponents';
 //import NestedNumberList from './Router/numberlist';
 //import ApiExample from './Router/Api';
 //import Formvalidation from './Router/Formvalidation';
@@ -19,7 +22,7 @@ import Login from './Router/ControlledCOmponents';
 createRoot(document.getElementById('root')).render(
 
   <StrictMode>
-    <Login />
+    <ImageGallery />
   </StrictMode>
 
 );
