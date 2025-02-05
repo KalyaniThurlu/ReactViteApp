@@ -4,8 +4,11 @@ import { createRoot } from 'react-dom/client';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import ImageGallery from './Router/ExApi';
-
+//import Counter from './hooks/UseReducer';
+//import ExuseState from './hooks/UseState';
+import Exusereducer from './hooks/UseCOntextjsx';
+//import Curdoperations from './Router/curd1';
+//import ImageGallery from './Router/ExApi';
 //import UncontrolledComponents from './Router/UncontrolledComponents';
 //import Login from './Router/ControlledCOmponents';
 //import NestedNumberList from './Router/numberlist';
@@ -22,7 +25,7 @@ import ImageGallery from './Router/ExApi';
 createRoot(document.getElementById('root')).render(
 
   <StrictMode>
-    <ImageGallery />
+    <Exusereducer />
   </StrictMode>
 
 );

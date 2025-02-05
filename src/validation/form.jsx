@@ -49,7 +49,7 @@ export function Form1() {
     if (valid) {
       alert("Form submitted successfully!");
       console.log({ name, pwd, number });
-    }
+    }7
   }
 
   function handleChange(e) {
@@ -70,7 +70,7 @@ export function Form1() {
         <h2>Form Validation</h2>
         <dt>Name:</dt>
         <dd>
-          <input style={{ marginLeft: "6%" }}
+          <input style={{ marginLeft: "6%", marginBottom: "5px", marginTop: "4px" }}
             type="text"
             name="name"
             value={name}
