@@ -4,7 +4,8 @@ import { createRoot } from 'react-dom/client';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import Excallback from './hooks/Usecallback';
+import { Calculator } from './hooks/calculator';
+//import Excallback from './hooks/Usecallback';
 //import Curdoperations from './Router/curd1';
 //import ImageGallery from './Router/ExApi';
 //import UncontrolledComponents from './Router/UncontrolledComponents';
@@ -23,7 +24,7 @@ import Excallback from './hooks/Usecallback';
 createRoot(document.getElementById('root')).render(
 
   <StrictMode>
-    <Excallback />
+    <Calculator />
   </StrictMode>
 
 );

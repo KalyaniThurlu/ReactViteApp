@@ -49,7 +49,7 @@ export function Form1() {
     if (valid) {
       alert("Form submitted successfully!");
       console.log({ name, pwd, number });
-    }7
+    }
   }
 
   function handleChange(e) {
