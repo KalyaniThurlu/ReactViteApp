@@ -6,7 +6,7 @@ export function Calculator() {
     const [currentInput, setCurrentInput] = useState("");
 
     function handleClick(value) {
-        if (value === "Ac") {
+        if (value === "Ac") { 
             setCurrentInput("");
         } else if (value === "Del") {
             setCurrentInput(currentInput.slice(0, -1));
