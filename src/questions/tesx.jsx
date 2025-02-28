@@ -2,7 +2,6 @@
 // A)The package.json file is used to manage project dependencies, scripts, 
 // and metadata in Node.js and JavaScript projects, ensuring consistent 
 // environments across different systems.
-
 // 2. What is ReactJS and what is the verson of React you are using?
 //  A)ReactJS is a JavaScript library for building user interfaces with reusable components. It is ude for web Applications .It allows developers in spa(
 // The version y
@@ -14,7 +13,7 @@
 // 8. What is the use of Keys in react?
 // 9. What is the Virtual DOM?
 // 10. What is Difference betweeen Virtual DOM and Real DOM?
-// 11. What are Differennt React Life Cycle methods?
+// 11. What are Differennt React Life Cycle methods?    
 // 12. What are Different Types of Hooks available in react and How they will work?
 // 13. What is useState How it will work?
 // 14. What is useEffect How it will work?
@@ -39,5 +38,4 @@
 // 34. What is difference between  val ,let and const?
 // 35. What is Promise? What are different types of stages of it?
 // 36. What is difference between axios and fetch?
-
 
