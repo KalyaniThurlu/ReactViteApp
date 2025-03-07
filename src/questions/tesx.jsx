@@ -38,4 +38,3 @@
 // 34. What is difference between  val ,let and const?
 // 35. What is Promise? What are different types of stages of it?
 // 36. What is difference between axios and fetch?
-

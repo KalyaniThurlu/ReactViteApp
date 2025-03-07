@@ -1,41 +1,40 @@
-import axios from "axios"
-import { useEffect, useState } from "react"
 
-const JsonGet = () => {
-    const [posts, setPosts] = useState([])
-    useEffect(() => {
-        axios.get("https://jsonplaceholder.typicode.com/posts")
-            .then((response) => {
-                console.log(response.data)
-                setPosts(response.data)
-            }).catch((error) => {
-                console.error(error)
+import axios from "axios";
+import { useState } from "react";
+
+const DeleteData = () => {
+    const [id, setId] = useState("");
+    const [msg, setMsg] = useState(null);
+
+    const handleClick = () => {
+        if (!id) {
+            setMsg("Provide an ID");
+            return; // ✅ Stop execution if ID is empty
+        }
+
+        axios.delete(`https://api.restful-api.dev/objects/${id}`)
+            .then((res) => {
+                if (res.status === 200) {
+                    console.log("Deleted successfully");
+                    setMsg("Deleted successfully");
+                }
             })
-    }, [])
+            .catch((error) => {
+                console.error(error);
+                setMsg("Error deleting data.");
+            });
+    };
+
     return (
         <div>
-            <h1>hello</h1>
-            <table border="one">
-                <thead>
-                    <tr>
-                        <th>id</th>
-                        <th>title</th>
-                        <th>body</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {
-                        posts.map((post) => (
-                            <tr key={post.id}>
-                                <td>{post.id}</td>
-                                <td>{post.title}</td>
-                                <td>{post.body}</td>
-                            </tr>
-                        ))
-                    }
-                </tbody>
-            </table>
+            <p>{msg}</p>
+            <label>
+                ID: <input type="text" value={id} onChange={(e) => setId(e.target.value)} />
+            </label>
+            <br />
+            <button onClick={handleClick}>Delete</button>
         </div>
-    )
-}
-export default JsonGet
+    );
+};
+
+export default DeleteData;
