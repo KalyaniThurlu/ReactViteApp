@@ -54,14 +54,16 @@ const PostApi = () => {
     };
 
     return (
-        <div>
-            <h3>{msg}</h3>
+        <div className="d-flex justy-content-center align-items-center" style={{ marginLeft: "30%" }}>
+
+
             Name: <input type="text" value={name} onChange={nameChange} /><br />
             Price: <input type="text" value={price} onChange={priceChange} /><br />
             Year: <input type="text" value={year} onChange={yearChange} /><br />
             CPU: <input type="text" value={cpu} onChange={cpuChange} /><br />
             Hard Disk: <input type="text" value={hardDisk} onChange={hardDiskChange} /><br />
             <button type="button" onClick={handleClick}>Post</button>
+            <h1>{msg}</h1>
         </div>
     );
 };

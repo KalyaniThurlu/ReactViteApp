@@ -63,7 +63,7 @@ const PutApi = () => {
     return (
         <div>
             {msg}
-            id:<input type="text" name={id} onChange={idChange} /><br />
+            id:<input type="text" value="name" name={id} onChange={idChange} /><br />
             name:<input type="text" name={name} onChange={nameChange} /><br />
             price:<input type="text" name={price} onChange={priceChange} /><br />
             year:<input type="text" name={year} onChange={yearChange} /><br />

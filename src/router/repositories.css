@@ -1,0 +1,103 @@
+
+/* reposTable.css */
+
+/* Table Styles */
+.repos-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .repos-table th,
+  .repos-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .repos-table th {
+    background-color: #f4f4f4;
+  }
+  
+  .repos-table td img.avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .repos-table td a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .repos-table td a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Profile Modal */
+  .profile-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .profile-modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+  }
+  
+  .profile-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button:disabled {
+    background-color: #d6d6d6;
+    cursor: not-allowed;
+  }
+  
+  /* Pagination Controls */
+  .pagination-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .pagination-controls button {
+    padding: 8px 16px;
+  }
+  
+  .pagination-controls select {
+    padding: 5px;
+  }
+  
+  .pagination-controls span {
+    font-size: 16px;
+  }
+  

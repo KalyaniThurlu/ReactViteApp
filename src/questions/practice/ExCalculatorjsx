@@ -1,0 +1,66 @@
+
+import { useState } from "react";
+
+const UsestaeExample = () => {
+    const [data, setData] = useState({
+        num1: "", num2: "", rst: "", oparator: ""
+    })
+
+    const handleClick = () => {
+        const { num1, num2, oparator } = data
+        const n1 = Number(num1)
+        const n2 = Number(num2)
+        let rst = 0
+
+        switch (oparator) {
+            case "+":
+
+                rst = n1 + n2;
+                break;
+            case "-":
+                rst = n1 - n2
+                break;
+            case "*":
+                rst = n1 * n2;
+                break;
+            case "%":
+                rst = n1 % n2;
+                break;
+            default:
+                return "deafult value"
+
+        }
+        setData({ ...data, rst })
+
+    }
+    const clearValue = () => {
+        setData({ ...data, num1: "", num2: "", oparator: "", rst: "" })
+    }
+
+    return (
+        <div>
+            <center>
+
+
+                <div>
+                    EnterNum1: <input type="text" name="num1" value={data.num1} onChange={(e) => setData({ ...data, num1: e.target.value })} /><br />
+
+                    EnterNum2: <input type="text" name="num2" value={data.num2} onChange={(e) => setData({ ...data, num2: e.target.value })} /><br />
+                    Oparator:  <input type="text" name="oparator" value={data.oparator} onChange={(e) => setData({ ...data, oparator: e.target.value })} /><br />
+                    <input type="button" name="getResults" value="getResults" onClick={handleClick} />
+                    <input type="button" value="clear" onClick={() => clearValue()} />
+
+                </div>
+                <div>
+                    Results:  <input type="text" value={data.rst} readOnly />
+
+
+                </div>
+
+            </center>
+
+        </div>
+    );
+};
+
+export default UsestaeExample;

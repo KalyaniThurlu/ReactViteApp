@@ -1,30 +1,42 @@
 import axios from "axios"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
-const DeletApi = () => {
-    const [id, setId] = useState(null)
+const DeletApi1 = () => {
+    const [items, setItems] = useState([])
     const [msg, setMsg] = useState("")
-    const handleClick = () => {
-        if (!id) {
-            setMsg("provide id")
-            return;
-        }
-        axios.delete("https://api.restful-api.dev/objects/6")
+
+
+    useEffect(() => {
+        axios.get("https://dummyjson.com/products")
             .then((res) => {
-                console.log(res.ok)
+                console.log(res.data.products)
+                setItems(res.data.products)
+                setMsg("data get")
+
             }).catch((error) => {
                 console.error(error)
+
             })
-    }
+    }, [])
+
 
     return (
 
         <div>
             <h1>{msg}</h1>
-            id:<input type="text" value={id} onChange={(e) => setId(e.target.value)} /><br />
-            <button type="submit" onClick={handleClick}>btn</button>
+            <ul>
+                {
+                    items.map((item, id) => (
+                        <li key={id}>{item.id}
+                            {item.price}
+                            {item.title}
+                        </li>
+
+                    ))
+                }
+            </ul>
 
         </div>
     )
 }
-export default DeletApi
+export default DeletApi1

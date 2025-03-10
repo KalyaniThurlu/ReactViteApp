@@ -9,7 +9,8 @@ const DeleteData = () => {
     const handleClick = () => {
         if (!id) {
             setMsg("Provide an ID");
-            return; // ✅ Stop execution if ID is empty
+            return;
+
         }
 
         axios.delete(`https://api.restful-api.dev/objects/${id}`)
