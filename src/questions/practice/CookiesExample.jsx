@@ -1,26 +1,24 @@
-import  { useState } from 'react';
-import Cookies from 'js-cookie';
+import { useState } from "react";
+import Cookies from "js-cookie";
 
-const CookieExample = () => {
-  const [cookieValue, setCookieValue] = useState(Cookies.get('user'));
 
+
+const Excookies = () => {
+  const [cookieValue, setCookieValue] = useState(Cookies.get("user"))
   const setCookie = () => {
-    Cookies.set('user', 'John Doe', { expires: 7 });
-    setCookieValue('John Doe');
-  };
-
-  const deleteCookie = () => {
-    Cookies.remove('user');
-    setCookieValue(null);
-  };
-
+    Cookies.set("user", "john")
+    setCookieValue("john")
+  }
+  const removeCookie = () => {
+    Cookies.remove("user")
+    setCookieValue("")
+  }
   return (
     <div>
-      <h1>Current User: {cookieValue ? cookieValue : 'No user logged in'}</h1>
-      <button onClick={setCookie}>Set Cookie</button>
-      <button onClick={deleteCookie}>Delete Cookie</button>
+      <p>cookievalue:{cookieValue ? cookieValue : "no login"}</p>
+      <button onClick={setCookie}>setCookie</button>
+      <button onClick={removeCookie}>removeCookie</button>
     </div>
-  );
-};
-
-export default CookieExample;
+  )
+}
+export default Excookies;

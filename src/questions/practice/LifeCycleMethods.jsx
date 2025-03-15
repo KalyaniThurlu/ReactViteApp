@@ -1,23 +1,23 @@
 import { useEffect, useState } from "react";
 
-const ExLifeCycleMethods = () => {
-    const [name, setName] = useState("john")
-    
-    useEffect(() => {
-        console.log("Component Did Mount")
-        return () => {
-            console.log("Component Update Mount")
-        }
-    }, [name]);
+const ExLifeCycle = () => {
+    const [name, setName] = useState("rama")
 
-    const nameChange = () => {
-        setName("latha");
+    useEffect(() => {
+        console.log("component did mount")
+        return () => {
+            console.log("component will unmount")
+        }
+
+    }, [name])
+    const handleCliCk = () => {
+        setName("suma")
     }
     return (
         <div>
-            {name}
-            <button onClick={nameChange}>NameChange</button>
+            <h1>name:{name}</h1>
+            <button onClick={handleCliCk}>nameChange</button>
         </div>
     )
 }
-export default ExLifeCycleMethods; 
+export default ExLifeCycle;

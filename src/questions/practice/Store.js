@@ -1,14 +1,11 @@
 import { createStore } from "redux";
-
-const initialState = { count: 0 };
-
-const ExReducer = (state = initialState, action) => {
+let initialState = { count: 0 };
+const Exreducer = (state = initialState, action) => {
   if (action.type === "increment") {
     return { count: state.count + 1 };
+  } else {
+   return state;
   }
-  return state;
 };
-
-const store = createStore(ExReducer);
-
+let store = createStore(Exreducer);
 export default store;

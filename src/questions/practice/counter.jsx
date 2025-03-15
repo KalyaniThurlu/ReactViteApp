@@ -1,18 +1,17 @@
-
-
-
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux"
 
 const Counter = () => {
-  const count = useSelector((state) => state.count);
-  const dispatch = useDispatch();
+  let count = useSelector((state) => state.count)
+
+  let dispatch = useDispatch()
 
   return (
     <div>
-      <h1>Count: {count}</h1>
-      <button onClick={() => dispatch({ type: "increment" })}>Increment</button>
+      <h1>hello</h1>
+      <h1>count:{count}</h1>
+      <button onClick={() => dispatch({ type: "increment" })}>increment</button>
     </div>
-  );
-};
+  )
 
-export default Counter;
+}
+export default Counter

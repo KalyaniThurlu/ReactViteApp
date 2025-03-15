@@ -1,15 +1,18 @@
 
-const KeyExample = () => {
-    let arr = [1, 2, 3, 4, 5, 6]
+
+const Exkeys = () => {
+    let names = ["latha", "rama", "suma", "padhma"]
     return (
         <div>
-            {arr.map((item, index) => (
-                <h2 key={index}>
-                    {item+2}
-                </h2>
-            ))
-            }
+
+            <ul>
+                {
+                    names.map((name, id) => (
+                        <li key={id}>{name}</li>
+                    ))
+                }
+            </ul>
         </div>
     )
 }
-export default KeyExample;
+export default Exkeys

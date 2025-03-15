@@ -1,27 +1,59 @@
-import axios from "axios"
-import { useState } from "react"
+import { useState } from "react";
 
-const DeleteApi1 = () => {
-    const [id, setId] = useState("")
-    const [msg, setMsg] = useState("")
-    const handleCliCk = () => {
-        if (!id) {
-            setMsg("provide id")
-            return
+const Formvalidation = () => {
+    const [name, setName] = useState("")
+    const [nameError, setNameError] = useState("")
+    const [pwd, setPwd] = useState("")
+    const [pwdError, setPwdError] = useState("")
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        let valid = true;
+        if (name.length < 6) {
+            setNameError("name required")
+            valid = false
+        } else {
+            setNameError("")
         }
-        axios.delete(`https://api.restful-api.dev/objects/${id}`)
-            .then((res) => {
-                console.log(res.ok)
-            }).catch((error) => {
-                console.error(error)
-            })
+        if (pwd.length < 6) {
+            setPwdError("password required")
+            valid = false
+        } else {
+            setPwdError("")
+        }
+        if (valid) {
+            console.log({ name, pwd })
+        }
     }
+
+    const handleChange = (e) => {
+        const { name, value } = e.target
+        if (name === "name") {
+            setName(value)
+        } else if (name === "pwd") {
+            setPwd(value)
+        }
+    }
+
     return (
         <div>
-            <p>{msg}</p>
-            <input type="text" value={id} onChange={(e) => setId(e.target.value)} /><br />
-            <button onClick={handleCliCk}>deleteData</button>
+
+            <form action="" onSubmit={handleSubmit}>
+
+                <div>
+                    name:   <input type="text" name="name" value={name} onChange={handleChange} /><br />
+
+                    {nameError && <p style={{ color: "red" }}>{nameError}</p>}
+                </div>
+                <div>
+                    pwd:   <input type="text" name="pwd" value={pwd} onChange={handleChange} /><br />
+                    {pwdError && <p style={{ color: "red" }}>{pwdError}</p>}
+                </div>
+                <button>submit</button>
+
+            </form>
+
         </div>
     )
 }
-export default DeleteApi1
+export default Formvalidation;

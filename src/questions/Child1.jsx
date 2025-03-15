@@ -1,11 +1,13 @@
+import { useContext } from "react"
+import { MyContext } from "../main"
 
-const Child1Component=({name,updatedName})=>{
- return (
-    <div>
-        <h1>tihs is updated name</h1>
-        <p>{name}</p>
-        <button onClick={()=>updatedName("latha")}></button>
-    </div>
- )
+const ChildComponent = () => {
+    let num = useContext(MyContext)
+    return (
+        <div><h1>this is childComponent</h1>
+            <h1>nums:{num}</h1>
+        </div>
+    )
 }
-export default Child1Component;
+export default ChildComponent
+

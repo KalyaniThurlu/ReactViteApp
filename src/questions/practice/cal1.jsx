@@ -6,8 +6,8 @@ const Cal1 = () => {
     })
     const getResults = () => {
         const { num1, num2, oparator } = data
-        let n1 = num1
-        let n2 = num2
+        let n1 = Number(num1)
+        let n2 = Number(num2)
         let rst = ""
 
         if (oparator === "+") {

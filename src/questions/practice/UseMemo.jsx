@@ -1,21 +1,17 @@
-import { useMemo, useState } from "react";
+import { useCallback, useState } from "react";
 
-const UsememoExample = () => {
+const ExuseMemo = () => {
     const [count, setCount] = useState(0)
-
-    const computedValue = useMemo(() => {
-        return count + 2
+    let exUsememoValue = useCallback(() => {
+        return count + 1
     }, [count])
 
-    const handleCliCk = () => {
-        setCount(count + 1)
-    }
     return (
         <div>
-            <p>computedValue:{computedValue}</p>
-            count:   {count}
-            <button onClick={handleCliCk}>incerment</button>
+            <p>UseMemoValue:{exUsememoValue()}</p>
+            <p>count:{count}</p>
+            <button onClick={() => setCount(count + 1)}>increment</button>
         </div>
     )
 }
-export default UsememoExample;
+export default ExuseMemo;
